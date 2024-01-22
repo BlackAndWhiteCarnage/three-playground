@@ -1,0 +1,22 @@
+@use './variables' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: map-get($colors, gray);
+	color: map-get($colors, white);
+	font-family: map-get($fonts, primary);
+	overflow-x: hidden;
+}
+
+img {
+	user-select: none;
+}
+
+canvas {
+	position: fixed;
+}
